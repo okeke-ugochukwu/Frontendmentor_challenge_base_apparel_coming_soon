@@ -22,7 +22,6 @@ html {
 }
 
 * {
-  outline: 2px solid red;
   font-family: 'Josefin Sans', sans-serif;
 }
 
@@ -36,19 +35,36 @@ main {
   height: 100%;
 }
 
+.primary-text {
+  color: #ce9797;
+}
+
+.thin {
+  font-weight: 300;
+}
+
 section:first-child {
   width: 100%;
   height: 100%;
   font-display: 100;
-  background: url("/img/bg-pattern-mobile.svg");
+  background: url("/img/bg-pattern-mobile.svg"), #FFF7F8;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 section:first-child div:not(:nth-child(2)) {
-  width: 85%;
+  width: 80%;
   max-width: 800px;
   margin: auto;
+}
+
+section:first-child div:first-child {
+  width: 100%;
+}
+
+.centerizer {
+  width: 100%;
+  height: 80vh;
 }
 
 .intro {
@@ -56,7 +72,8 @@ section:first-child div:not(:nth-child(2)) {
 }
 
 #logo {
-  padding: 20px 0px;
+  width: 150px;
+  padding: 30px 0px 30px 30px;
 }
 
 .mobile_hero_img {
@@ -64,18 +81,63 @@ section:first-child div:not(:nth-child(2)) {
   background: url(/img/hero-mobile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  margin-bottom: 68px;
+  margin-bottom: 65px;
 }
 
 h1 {
   width: 80%;
-  font-weight: 100;
-  font-size: 50px;
-  margin-bottom: 35px;
+  margin: auto;
+  font-weight: 600;
+  font-size: 40px;
+  letter-spacing: .3em;
+  margin-bottom: 20px;
+  line-height: 1em;
+  color: #413a3a;
 }
 
 p {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
+  color: #ce9797;
+  font-size: 14px;
+  line-height: 1.4em;
+}
+
+#form-container {
+  width: 100%;
+}
+
+form {
+  position: relative;
+}
+
+label {
+  display: none;
+}
+
+input, button {
+  border: none;
+  border-radius: 30px;
+}
+
+input[type=email] {
+  width: 100%;
+  color: #ce9797;
+  border: 1px solid #ce9797;
+  background: transparent;
+  padding: 15px 80px 15px 25px;
+}
+
+button[type=submit] {
+  width: 20%;
+  height: 101%;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  -webkit-box-shadow: 3px 10px 20px #ef8e8e97;
+          box-shadow: 3px 10px 20px #ef8e8e97;
+  background: linear-gradient(120deg, #F8B6BA, #EF8E8E);
+  position: absolute;
+  right: 0;
 }
 
 section:nth-child(2) {
@@ -83,6 +145,7 @@ section:nth-child(2) {
   height: 100%;
   display: none;
   background: url("/img/hero-desktop.jpg");
+  background-repeat: no-repeat;
 }
 
 .attribution {
@@ -96,6 +159,9 @@ section:nth-child(2) {
 }
 
 @media only screen and (min-width: 585px), only screen and (min-device-width: 585px) {
+  h1 {
+    margin: initial;
+  }
   .intro {
     text-align: start;
   }
