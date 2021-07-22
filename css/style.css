@@ -76,7 +76,7 @@ section:first-child {
 
 .mobile_hero_img {
   height: 250px;
-  background: url("./img/hero-mobile.jpg");
+  background: url("../img/hero-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 65px;
