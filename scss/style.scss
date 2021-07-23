@@ -36,13 +36,13 @@ $neutral: hsl(0, 6%, 24%);
 
 // left pertition (text)
 section:first-child {
-    
+
     width: 100%;
     height: 100%;
     font-display: 100;
     background: #FFF7F8;
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: cover;
 }
 .centerizer {
     width: 100%;
@@ -54,7 +54,7 @@ section:first-child {
     text-align: center;
 
     div:nth-child(3) {
-        
+
     }
 }
 #logo {
@@ -86,11 +86,12 @@ p {
 }
 #form-container  {
     width: 100%;
-  
+
 }
 form {
     position: relative;
-    
+    margin-bottom: 8px;
+
 }
 label {
     display: none;
@@ -105,7 +106,7 @@ input[type=email] {
     border: 1px solid $primary;
     background: transparent;
     padding: 15px 80px 15px 25px;
-    
+
     &::placeholder {
         color: $primary;
         opacity: .5;
@@ -121,7 +122,10 @@ button[type=submit] {
     position: absolute;
     right: 0;
 }
-
+#error-msgbox {
+    padding-left: 25px;
+    color: $accent;
+}
 // right pertition (img)
 section:nth-child(2) {
     width: 40%;
@@ -139,7 +143,7 @@ section:nth-child(2) {
 @mixin tablet   {
     @media only screen and (min-width: 585px), only screen and(min-device-width: 585px) {
         @content;
-    }       
+    }
 }
 @mixin desktop {
     @media only screen and(min-width: 1100px), only screen and(min-device-width: 1100px) {
@@ -185,14 +189,14 @@ section:nth-child(2) {
         line-height: 2em;
         font-size: 16px;
     }
-    
+
 }
 @include desktop {
     main {
         display: flex;
     }
     section:first-child {
-        width: 60%;   
+        width: 60%;
     }
     section:nth-child(2) {
         display: block;

@@ -107,6 +107,7 @@ p {
 
 form {
   position: relative;
+  margin-bottom: 8px;
 }
 
 label {
@@ -157,6 +158,11 @@ button[type=submit] {
   background: linear-gradient(120deg, #F8B6BA, #EF8E8E);
   position: absolute;
   right: 0;
+}
+
+#error-msgbox {
+  padding-left: 25px;
+  color: #f96262;
 }
 
 section:nth-child(2) {

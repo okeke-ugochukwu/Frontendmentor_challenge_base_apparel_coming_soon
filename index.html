@@ -6,17 +6,15 @@
         <meta charset="UTF-8">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=
-        Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,
-        700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
         <link rel="shortcut icon" href="img/favicon.png" type="image/png">
         <link rel="stylesheet" href="css/style.css">
-            
+
         <meta name="description" content="">
         <meta name="keywords" content="">
         <meta name="theme-color" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
+
         <!--Open Graph data-->
         <meta property="og:locale" content="en_US"/>
         <meta property="og:type" content="website"/>
@@ -36,8 +34,8 @@
         <meta name="twitter:url" content="">
         <meta name="twitter:image" content="">
 
-       
-        
+
+
     </head>
 
     <body>
@@ -45,38 +43,43 @@
 
         <main>
             <section>
-                <div class="centerizer"> <!--pardon me, lol--> 
+                <div class="centerizer"> <!--pardon me, lol-->
                     <div class="site_ID" >
                         <a href="index.html"></a>
                         <img src="./img/logo.svg" alt="logo" id="logo" />
                     </div>
-    
+
                     <div class="mobile_hero_img">
-                        
+
                     </div>
-    
+
                     <div class="intro">
                         <h1 >
                             <span class="primary-text thin">WE'RE</span> COMING SOON
                         </h1>
-    
+
                         <p class="primary_text regular">
-                            Hello fellow shoppers! We're currently building our new fashion store. 
+                            Hello fellow shoppers! We're currently building our new fashion store.
                             Add your email below to stay up-to-date with announcements and our launch deals.
                         </p>
-    
+
                         <div class="form-container" id="form-container">
                             <form action="#">
-                                <button type="submit">
+                                <button type="submit" id="submit">
                                     <img src="./img/icon-arrow.svg" alt="join email_list">
                                 </button>
 
 
                                 <label for="email">Email</label>
                                 <input class="regular" type="email" id="email" autocomplete="email" placeholder="Email Address">
-    
-    
+
                             </form>
+                            <span id="error-msgbox">
+                                <small id="mssg" >
+
+                                </small>
+                            </span>
+
                         </div>
                     </div>
                 </div>
@@ -88,16 +91,16 @@
         </main>
 
 
-                
+
         <footer>
           <p class="attribution">
-            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
             Coded by <a href="#">Your Name Here</a>.
           </p>
         </footer>
-        
-       
-       
+
+
+
         <script type="text/javascript" src="js/script.js"></script>
     </body>
 </html>
