@@ -93,7 +93,9 @@ p {
 form {
     position: relative;
     margin-bottom: 8px;
-
+    display: flex;
+    align-items: center; //to keep the error icon vertically centered
+    
 }
 label {
     display: none;
@@ -127,7 +129,19 @@ button[type=submit] {
     background: linear-gradient(120deg, #F8B6BA, #EF8E8E);
     position: absolute;
     right: 0;
+
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.05);
+        box-shadow: 3px 13px 15px #ef8e8e97;
+    }
 }
+#error-icon {
+    position: absolute;
+    right: 25%;
+    display: none;
+}
+
 #error-msgbox {
     padding-left: 25px;
     color: $accent;

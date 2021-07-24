@@ -110,6 +110,12 @@ p {
 form {
   position: relative;
   margin-bottom: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 label {
@@ -166,6 +172,20 @@ button[type=submit] {
   background: linear-gradient(120deg, #F8B6BA, #EF8E8E);
   position: absolute;
   right: 0;
+}
+
+button[type=submit]:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-box-shadow: 3px 13px 15px #ef8e8e97;
+          box-shadow: 3px 13px 15px #ef8e8e97;
+}
+
+#error-icon {
+  position: absolute;
+  right: 25%;
+  display: none;
 }
 
 #error-msgbox {
