@@ -150,12 +150,14 @@ button[type=submit] {
     position: absolute;
     left: 0;
 }
+
+
 // right pertition (img)
 section:nth-child(2) {
     width: 40%;
     height: 100%;
     display: none;
-    background: url("/img/hero-desktop.jpg");
+    background: url("../img/hero-desktop.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
