@@ -69,6 +69,7 @@ section:first-child {
   width: 80%;
   margin: auto;
   text-align: center;
+  position: relative;
 }
 
 #logo {
@@ -120,32 +121,38 @@ input, button {
   border-radius: 30px;
 }
 
-input[type=email] {
+input {
   width: 100%;
   color: #413a3a;
   border: 1px solid #ce9797;
   background: transparent;
   padding: 15px 80px 15px 25px;
+  -webkit-transition: .2secs;
+  transition: .2secs;
 }
 
-input[type=email]::-webkit-input-placeholder {
+input::-webkit-input-placeholder {
   color: #ce9797;
   opacity: .5;
 }
 
-input[type=email]:-ms-input-placeholder {
+input:-ms-input-placeholder {
   color: #ce9797;
   opacity: .5;
 }
 
-input[type=email]::-ms-input-placeholder {
+input::-ms-input-placeholder {
   color: #ce9797;
   opacity: .5;
 }
 
-input[type=email]::placeholder {
+input::placeholder {
   color: #ce9797;
   opacity: .5;
+}
+
+.error {
+  border: 2px solid #f96262;
 }
 
 button[type=submit] {
@@ -164,6 +171,10 @@ button[type=submit] {
 #error-msgbox {
   padding-left: 25px;
   color: #f96262;
+  margin: 0;
+  text-align: start;
+  position: absolute;
+  left: 0;
 }
 
 section:nth-child(2) {

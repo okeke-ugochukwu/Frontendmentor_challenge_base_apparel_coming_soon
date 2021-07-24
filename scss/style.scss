@@ -53,6 +53,7 @@ section:first-child {
     width: 80%;
     margin: auto;
     text-align: center;
+    position: relative;
 
     div:nth-child(3) {
 
@@ -101,17 +102,21 @@ input, button {
     border: none;
     border-radius: 30px;
 }
-input[type=email] {
+input {
     width: 100%;
     color: $neutral;
     border: 1px solid $primary;
     background: transparent;
     padding: 15px 80px 15px 25px;
+    transition: .2secs;
 
     &::placeholder {
         color: $primary;
         opacity: .5;
     }
+}
+.error {
+    border: 2px solid $accent;
 }
 button[type=submit] {
     width: 20%;
@@ -126,6 +131,10 @@ button[type=submit] {
 #error-msgbox {
     padding-left: 25px;
     color: $accent;
+    margin: 0;
+    text-align: start;
+    position: absolute;
+    left: 0;
 }
 // right pertition (img)
 section:nth-child(2) {
